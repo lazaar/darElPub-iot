@@ -1,8 +1,9 @@
 class video:
-    def __init__(self, id, name, qte):
-        self.id =id;
-        self.name =name;
-        self.qte =qte;
+    def __init__(self, id, name, qte, show):
+        self.id =id
+        self.name =name
+        self.qte =qte
+        self.show = show
 
     def getId(self):
         return self.id;
@@ -16,3 +17,7 @@ class video:
         return self.qte
     def setQte(self,qte):
         self.qte = qte
+    def isShow(self):
+        return self.show
+    def setShow(self,show):
+        self.show = show
