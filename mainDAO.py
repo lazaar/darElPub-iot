@@ -1,5 +1,5 @@
 import sqlite3
-from .. import video
+import Bean.video
 
 class mainDAO:
 
@@ -16,4 +16,3 @@ class mainDAO:
             print("Erreur d'execution du script")
             conn.rollback()
 db = video(1,'test','','')
-print(db.getName())
