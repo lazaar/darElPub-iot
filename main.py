@@ -20,6 +20,7 @@ def getNewData():
 		dao.insertVideo((video['name'], video['qte'], 1))
 		if(not os.path.isfile('videos/'+video['name']+'.mp4')):
 			os.system("python youtube-dl --output ./videos/%s.mp4 %s"%(video['name'],'https://www.youtube.com/watch?v='+video['name']))
+	dao.setData('isReady', '1')
 
 # mettre HDMI du raspberry en mode off
 
